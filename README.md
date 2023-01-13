@@ -13,7 +13,9 @@ O *Índice de Massa Corporal (IMC)* é uma medida usada para avaliar o nível de
 Este aplicativo calcula o Índice de Massa Corporal (IMC) de uma pessoa com base nos valores de peso e altura inseridos no formulário. Quando o formulário é enviado, o código impede que seja enviado e seleciona os elementos de entrada peso e altura. 
 Ele converte os valores desses elementos em números e valida que não são do tipo *NaN*. Caso sejam, chama a função *printResult()* para exibir uma mensagem de erro. E na sequência, chama a função *getBmi()* para calcular o IMC, passando os valores de peso e altura. Em seguida, ele chama a função *getBmiIndex()* para classificar o IMC em uma das quatro categorias: 
 "**Normal**", "**Underweight**", "**Overweight**", "**Obesity**", ou "**Severe Obesity**". 
-O código então cria uma string de mensagem que inclui o IMC calculado e sua classificação, e chama a função *printResult()* para exibir essa mensagem. A função *printResult()* primeiro limpa qualquer mensagem anterior, cria um novo elemento p e adiciona a mensagem como seu HTML interno. Ele também adiciona uma classe de "*goodResult*" ou "*badResult*" dependendo se a mensagem é válida ou não, e acrescenta o elemento *p* ao elemento *.result*. 
+O código então cria uma string de mensagem que inclui o IMC calculado e sua classificação, e chama a função *printResult()* para exibir essa mensagem. A função *printResult()* primeiro limpa qualquer mensagem anterior, cria um novo elemento p e adiciona a mensagem como seu HTML interno.
+
+Ele também adiciona uma classe de "*goodResult*" ou "*badResult*" dependendo se a mensagem é válida ou não, e acrescenta o elemento *p* ao elemento *.result*. 
 
 ## Layout
 
