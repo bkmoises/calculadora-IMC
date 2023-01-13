@@ -15,6 +15,10 @@ Ele converte os valores desses elementos em números e valida que não são do t
 "**Normal**", "**Underweight**", "**Overweight**", "**Obesity**", ou "**Severe Obesity**". 
 O código então cria uma string de mensagem que inclui o IMC calculado e sua classificação, e chama a função *printResult()* para exibir essa mensagem. A função *printResult()* primeiro limpa qualquer mensagem anterior, cria um novo elemento p e adiciona a mensagem como seu HTML interno. Ele também adiciona uma classe de "*goodResult*" ou "*badResult*" dependendo se a mensagem é válida ou não, e acrescenta o elemento *p* ao elemento *.result*. 
 
+## Layout
+
+![bmi-calculator-layout](https://github.com/bkmoises/calculadora-IMC/blob/main/assets/img/bmi-calculator-layout.png)
+
 ## Nota
 
 É importante ressaltar que as classificações usadas aqui podem não corresponder às classificações recomendadas pela *Organização Mundial da Saúde (OMS)* ou outras organizações de saúde, e esse código não deve ser usado para fins médicos ou de diagnóstico.
@@ -23,6 +27,3 @@ O código então cria uma string de mensagem que inclui o IMC calculado e sua cl
 
 Navegador Web.
 
-## Layout
-
-![bmi-calculator-layout](https://github.com/bkmoises/calculadora-IMC/blob/main/assets/img/bmi-calculator-layout.png)
