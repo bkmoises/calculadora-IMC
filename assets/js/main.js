@@ -8,15 +8,10 @@ form.addEventListener('submit', function(event) {
   const weight = Number(inWeight.value);
   const height = Number(inHeight.value);
 
-  if (!weight) {
-    printResult('Invalide weight!', false);
+  if (isNaN(weight) || isNaN(height)) {
+    printResult('Invalid weight or height!', false);
     return;
-  };
-
-  if (!height) {
-    printResult('Invalide height!', false);
-    return;
-  };
+  }
 
   const bmi = getBmi(weight, height);
   const bmiIndex = getBmiIndex(bmi);
@@ -32,17 +27,16 @@ function getBmi(weight, height) {
 
 function getBmiIndex(bmi) {
   const index = [
-    "Underweight",
     "Normal",
     "Overweight",
     "Obesity",
-    "Severe Obsity"
+    "Severe Obesity"
   ];
-  if (bmi >= 39.9) return index[4];
-  if (bmi >= 29.9) return index[3];
-  if (bmi >= 24.9) return index[2];
-  if (bmi >= 18.5) return index[1];
-  if (bmi < 18.5) return index[0];
+  if (bmi >= 39.9) return index[3];
+  if (bmi >= 29.9) return index[2];
+  if (bmi >= 24.9) return index[1];
+  if (bmi >= 18.5) return index[0];
+  return "Underweight";
 };
 
 function pCreator() {
@@ -54,7 +48,6 @@ function printResult(message, valid) {
   const result = document.querySelector('.result');
   const p = pCreator();
   result.innerHTML = '';
-
 
   if (valid) {
     p.classList.add('goodResult');
